@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,13 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="header">
                 <div class="company-identity">
-                    <img class="company-logo" 
-                         src="./img/logo.png"
-                         alt="FromBoard Delivery logo"
-                         width="50"
-                         height="74">
+                    <img class="company-logo" src="./img/logo.png" alt="FromBoard Delivery logo" width="50" height="74">
                     <span class="company-name">FromBoard Delivery</span>
                 </div>
                 <div class="header-brief-information">
@@ -47,5 +45,35 @@
             </div>
         </div>
     </header>
+    <div class="container introduction">
+        <section class="hero">
+            <h1>Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
+            <p>
+                Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России
+            </p>
+            <img src="./img/man_with_box.png" alt="Man with box" width="756" height="352">
+        </section>
+        <section class="calculator">
+            <div class="calculator-inner">
+                <h2>Калькулятор доставки</h2>
+                <p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
+                <form action="">
+                    <div class="calculator-inputs">
+                        <input class="full" type="text" placeholder="Имя">
+                        <input type="text" placeholder="Почта">
+                        <input type="text" placeholder="Телефон">
+                        <input type="text" placeholder="Общая площадь, м²">
+                        <input type="text" placeholder="Вес, кг">
+                        <input type="text" placeholder="Страна покупки">
+                        <input type="text" placeholder="Город покупки">
+                        <input type="text" placeholder="Область доставки">
+                        <input type="text" placeholder="Город доставки">
+                    </div>
+                    <input class="order-calculation" type="submit" value="Заказать расчёт">
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>

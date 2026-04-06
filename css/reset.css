@@ -5,3 +5,16 @@ ul {
 a {
     text-decoration: none;
 }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}

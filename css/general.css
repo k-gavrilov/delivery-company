@@ -208,6 +208,10 @@ html {
 	font-family: Formular, sans-serif;
 }
 
+body {
+	background: var(--gray-200);
+}
+
 a {
 	color: var(--gray-900);
 }
