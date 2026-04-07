@@ -183,3 +183,36 @@ header .navigation {
     padding: 10px 28px;
     border: none;   
 }
+
+/* --- Advantages --- */
+
+.advantages {
+    margin-top: 72px;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+.advantages-list > li {
+    padding: 24px;
+    display: flex;
+    max-width: 496px;
+    gap: 12px;
+}
+
+.advantages-list > li img {
+    max-width: 136px;
+    max-height: 136px;
+}
+
+.advantages-list .advantage-description {
+    max-width: 300px;
+}
+
+.advantages-list h3 {
+    margin-bottom: 12px;
+}
