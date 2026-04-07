@@ -190,6 +190,13 @@ header .navigation {
     margin-top: 72px;
 }
 
+.advantages h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 120%
+}
+
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
