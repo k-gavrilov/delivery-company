@@ -394,6 +394,10 @@ footer .navigation-bar a {
     color: var(--gray-50);
 }
 
+footer .navigation-bar a:hover {
+    color: var(--purple-500);
+}
+
 footer .phone {
     color: var(--gray-50);
 }
@@ -438,4 +442,9 @@ footer .created-by {
 
 .created-by {
     max-width: 242px;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
 }
