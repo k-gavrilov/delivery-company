@@ -3,6 +3,28 @@
     margin: 0 auto;
 }
 
+.burger-icon {
+    display: none;
+}
+
+@media (width <=1536px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (width <=1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (width <=758px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
 main {
     padding-bottom: 72px;
 }
@@ -15,9 +37,11 @@ header {
 }
 
 .header {
-    display: flex;
+    display: grid;
+    row-gap: 24px;
     justify-content: space-between;
     align-items: center;
+    grid-template-columns: 1fr auto auto;
     margin-bottom: 24px;
 }
 
@@ -40,7 +64,8 @@ header {
     align-items: center;
 }
 
-.header-brief-information .cost {
+.header .cost {
+    text-align: right;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -48,8 +73,8 @@ header {
     padding-right: 12px;
 }
 
-.header-brief-information .phone {
-    margin-left: 12px;
+.header .phone {
+    padding-left: 12px;
 }
 
 .phone .phone-number {
@@ -64,25 +89,129 @@ header {
     line-height: 133%;
 }
 
-header .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header .navigation-bar {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.navigation ul {
+.navigation-bar ul {
     display: flex;
     gap: 24px;
 }
 
-.navigation li {
+.navigation-bar li {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
 }
 
-.navigation .place-order {
+.place-order-container {
+    text-align: right;
+}
+
+.header .place-order {
     display: inline-block;
+}
+
+.purple-button {
+    display: inline-block;
+}
+
+@media (width <=1536px) {
+    .phone-number {
+        font-size: 30px;
+    }
+
+    .company-name {
+        font-size: 20px;
+    }
+
+    .phone .phone-notice {
+        font-size: 20px;
+    }
+}
+
+@media (width <=1024px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 12px;
+        column-gap: 0;
+    }
+
+    .header .navigation-bar {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
+
+    .header .cost {
+        display: flex;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+        text-align: center;
+        border-right: none;
+    }
+
+    .place-order-container {
+        margin: 12px 0;
+    }
+
+    .navigation-bar {
+        border-top: 2px solid var(--purple-400);
+        border-bottom: 2px solid var(--purple-400);
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .place-order-container {
+        border-top: 2px solid var(--purple-400);
+        border-bottom: 2px solid var(--purple-400);
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .phone .phone-number {
+        font-size: 24px;
+    }
+
+    .phone .phone-notice {
+        font-size: 16px;
+    }
+}
+
+@media (width <=758px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    .phone .phone-number {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .phone .phone-notice {
+        display: none;
+    }
+
+    .header .cost,
+    .header .navigation-bar,
+    .header .place-order-container {
+        display: none;
+    }
+
+    .burger-icon {
+        display: inline-block;
+        padding-left: 16px;
+    }
+
+    .phone-number {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
 }
 
 /* --- Hero --- */
