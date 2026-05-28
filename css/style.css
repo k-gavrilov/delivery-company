@@ -461,6 +461,20 @@ header {
     margin: 36px auto 0;
 }
 
+@media (width <=1536px) {
+    .guarantees .document-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (width <=1024px) {
+
+}
+
+@media (width <=758px) {
+
+}
+
 /*--- Feedback ---*/
 
 .feedback {
