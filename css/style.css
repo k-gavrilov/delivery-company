@@ -388,6 +388,35 @@ header {
     margin-bottom: 12px;
 }
 
+@media (width <=1536px) {
+
+}
+
+@media (width <=1024px) {
+    .advantages-list>li {
+        padding: 0;
+    }
+
+    .advantages-list h3 {
+        font-size: 20px;
+    }
+
+    .advantages-list .advantage-description {
+        max-width: 251px;
+    }
+
+    .advantages-list img {
+        width: 101px;
+        height: 101px;
+    }
+}
+
+@media (width <=758px) {
+    .advantages-list {
+        justify-content: center;
+    }
+}
+
 /*--- Guarantees ---*/
 
 .guarantees {
