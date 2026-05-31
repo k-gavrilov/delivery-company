@@ -618,18 +618,6 @@ header {
     margin-top: 20px;
 }
 
-@media (width <=1536px) {
-    
-}
-
-@media (width <=1024px) {
-
-}
-
-@media (width <=758px) {
-
-}
-
 /* --- Footer --- */
 
 footer {
@@ -662,19 +650,29 @@ footer .copy {
     color: var(--gray-50);
 }
 
+footer .copy-nowrap {
+    white-space: nowrap;
+}
+
+footer .smile {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
 footer .nav {
     display: flex;
     gap: 24px;
 }
 
-footer .navigation-bar a {
+footer .footer-navigation-bar a {
     font-weight: 700;
     font-size: 16px;
     line-height: 150%;
     color: var(--gray-50);
 }
 
-footer .navigation-bar a:hover {
+footer .footer-navigation-bar a:hover {
     color: var(--purple-500);
 }
 
@@ -724,7 +722,70 @@ footer .created-by {
     max-width: 242px;
 }
 
-.copy {
-    display: flex;
-    align-items: center;
+@media (1024px < width <=1536px) {
+    footer .container {
+        max-width: 1152px;
+    }
+}
+
+@media (width <=1536px) {
+    footer .phone .phone-number {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    footer .phone .phone-notice {
+        font-size: 20px;
+        line-height: 140%;
+    }
+}
+
+@media (width <=1024px) {
+    footer .upper-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .footer-navigation-bar {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    footer .phone {
+        text-align: right;
+    }
+
+    .lower-footer {
+        flex-direction: column;
+    }
+}
+
+@media (width <=758px) {
+    footer .upper-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-navigation-bar {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        justify-self: center;
+    }
+
+    footer .phone {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        text-align: center;
+    }
+
+    footer .identity-footer-with-copyright {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        text-align: center;
+    }
 }
