@@ -8,6 +8,10 @@
 }
 
 @media (width <=1536px) {
+    :root {
+        --section-gap: 48px;
+    }
+
     .container {
         max-width: 1024px;
     }
@@ -20,13 +24,17 @@
 }
 
 @media (width <=758px) {
+    :root {
+        --section-gap: 40px;
+    }
+
     .container {
         max-width: 640px;
     }
 }
 
 main {
-    padding-bottom: 72px;
+    padding-bottom: var(--section-gap);
 }
 
 /* --- Header --- */
@@ -183,6 +191,14 @@ header {
 }
 
 @media (width <=758px) {
+    header {
+        padding: 8px 0;
+    }
+
+    .header {
+        margin-bottom: 0;
+    }
+
     .company-name {
         font-size: 18px;
     }
@@ -219,7 +235,7 @@ header {
 .introduction {
     display: flex;
     gap: 24px;
-    padding-top: 72px;
+    padding-top: var(--section-gap);
 }
 
 .hero {
@@ -354,7 +370,7 @@ header {
 /* --- Advantages --- */
 
 .advantages {
-    margin-top: 72px;
+    margin-top: var(--section-gap);
 }
 
 .advantages h2 {
@@ -420,7 +436,7 @@ header {
 /*--- Guarantees ---*/
 
 .guarantees {
-    margin-top: 72px;
+    margin-top: var(--section-gap);
 }
 
 .guarantees h2 {
@@ -478,7 +494,7 @@ header {
 /*--- Feedback ---*/
 
 .feedback {
-    margin-top: 72px;
+    margin-top: var(--section-gap);
 }
 
 .carousel {
@@ -576,7 +592,7 @@ header {
 /* --- Feedback Form ---- */
 
 .leave-feedback {
-    margin-top: 72px;
+    margin-top: var(--section-gap);
 }
 
 .leave-feedback .container {
