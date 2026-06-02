@@ -34,11 +34,9 @@
 }
 
 main {
-    padding-bottom: var(--section-gap);
-}
-
-.section {
-    margin-top: var(--section-gap);
+    display: grid;
+    row-gap: var(--section-gap);
+    padding-block: var(--section-gap);
 }
 
 /* --- Header --- */
@@ -243,7 +241,6 @@ header {
 .introduction {
     display: flex;
     gap: 24px;
-    padding-top: var(--section-gap);
 }
 
 .hero {
