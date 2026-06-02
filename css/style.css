@@ -278,7 +278,7 @@ header {
 }
 
 .calculator-inner {
-    max-width: 496px;
+    max-width: min(100% - 24px, 496px);
 }
 
 .calculator h2 {
@@ -353,7 +353,7 @@ header {
     }
 
     .calculator-inner {
-        max-width: 606px;
+        max-width: min(100% - 24px, 606px);
         width: 100%;
     }
 }
@@ -593,7 +593,7 @@ header {
 
 .leave-feedback .feedback-form {
     margin: 32px auto 0;
-    max-width: 497px;
+    max-width: min(100% - 24px, 497px);
 }
 
 .leave-feedback .feedback-inputs {
