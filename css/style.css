@@ -37,6 +37,10 @@ main {
     padding-bottom: var(--section-gap);
 }
 
+.section {
+    margin-top: var(--section-gap);
+}
+
 /* --- Header --- */
 
 header {
@@ -179,6 +183,10 @@ header {
         height: 100%;
         align-items: center;
         align-content: center;
+    }
+
+    .header .header-phone {
+        justify-self: end;
     }
 
     .header-phone .header-phone-number {
@@ -369,10 +377,6 @@ header {
 
 /* --- Advantages --- */
 
-.advantages {
-    margin-top: var(--section-gap);
-}
-
 .advantages h2 {
     text-align: center;
 }
@@ -435,10 +439,6 @@ header {
 
 /*--- Guarantees ---*/
 
-.guarantees {
-    margin-top: var(--section-gap);
-}
-
 .guarantees h2 {
     margin-bottom: 12px;
 }
@@ -492,10 +492,6 @@ header {
 }
 
 /*--- Feedback ---*/
-
-.feedback {
-    margin-top: var(--section-gap);
-}
 
 .carousel {
     display: flex;
@@ -590,10 +586,6 @@ header {
 }
 
 /* --- Feedback Form ---- */
-
-.leave-feedback {
-    margin-top: var(--section-gap);
-}
 
 .leave-feedback .container {
     background-color: var(--gray-50);
