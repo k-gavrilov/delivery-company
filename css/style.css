@@ -1,6 +1,6 @@
 .container {
-    max-width: 1536px;
-    margin: 0 auto;
+    width: min(100% - 32px, 1536px);
+    margin-inline: auto;
 }
 
 .burger-icon {
@@ -13,13 +13,13 @@
     }
 
     .container {
-        max-width: 1024px;
+        width: min(100% - 32px, 1024px);
     }
 }
 
 @media (width <=1024px) {
     .container {
-        max-width: 768px;
+        width: min(100% - 32px, 768px);
     }
 }
 
@@ -29,7 +29,7 @@
     }
 
     .container {
-        max-width: 640px;
+        width: min(100% - 24px, 640px);
     }
 }
 
